@@ -1,0 +1,323 @@
+/*configurações gerais*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+@font-face {
+    font-family:'idroid';
+    src: url(../fontes/idroid.otf.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    font-size: calc(60% + 0.8vmin);
+}
+/*Cores do projeto
+    #c5ebd6
+    #83e1ad
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #f2ecce
+*/
+:root{
+   
+    --cor0: #f2ecce;
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #1a5c37;
+    --cor6: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid', cursive;
+    
+}
+/*Configuração pag. principal*/
+body{
+    font-family: var(--fonte-padrao);   
+    background-color: var(--cor0);
+    margin: 0px auto;
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+a.externoA::after{
+    content: '\00A0\1F517';    
+
+}
+a.externoA{
+    background-color: var(--cor2);
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor5), var(--cor2) );
+    margin: 0px;    
+}
+
+header h1#top{
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3em;    
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.237);
+}
+
+header>p{
+    color: white;
+    height: 50px;
+    width: 458px;
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 2px 7px 7px rgba(0, 0, 0, 0.237);
+    
+    
+}
+nav{
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;   
+    background-color: var(--cor5);
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.39);
+}
+nav>a{
+    text-decoration: none;
+    color: var(--cor1);
+    margin-right: 15px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-radius: 3px 3px 0px 0px;
+    transition-duration: .5s;
+}
+nav>a:hover{
+    color: var(--cor5);
+    background-color: var(--cor3);
+}
+
+main{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.559);
+    border-radius: 0px 0px 10px 10px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+} 
+main h1{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+
+main p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor5);
+   
+}
+
+main a{
+    text-decoration: none;
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 2px;
+    border-radius: 5px;
+}
+
+main a:hover{
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+span{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+div#video{
+    /*padding: 15px 20px;*/
+    padding-bottom: 58%;
+    background-color: var(--cor5);
+    margin: 0px -10px 30px;
+   
+   position: relative;
+}
+div#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 8px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.395);
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.395);
+}
+
+aside >ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+
+}
+footer>a{
+    padding: 5px;
+    color:var(--cor4);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/*Configuração pag. fale conosco*/
+.box{
+    padding-top: 20px;
+}
+
+fieldset{
+    border: 3px solid var(--cor4);
+    border-radius: 6px;
+}
+legend{
+    border: 1px solid var(--cor4);
+    padding: 6px;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    font-weight: normal;
+    font-size: 1.6em;
+    border-radius: 6px 0px;
+    font-family: var(--fonte-android);
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--cor3);
+    outline: none;
+    width: 50%;
+    font-size: 15px;       
+    
+}
+.inputUser2{
+    border: none;   
+    background-color: var(--cor0); 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 1.2em;
+    outline: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.183);   
+       
+}
+.inputLabel{
+    font-family: var(--fonte-destaque);
+    font-size: 1em;
+    font-weight: lighter;
+    color: var(--cor5);
+    padding-bottom: 5px;
+}
+.inputLabel:hover{
+    /*position: absolute;*/    
+    background-color: var(--cor0); 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 1.1em;  
+}
+
+#estado{
+    border: none;   
+    background-color: var(--cor0); 
+    border-radius: 5px;
+    padding: 5px; 
+    font-size: 1em;
+    outline: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.183);    
+}
+#submit{
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2) );
+    color: white;
+    padding: 2px 5px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.532);
+    border-radius: 5px 0px;
+    margin-bottom: 20px;
+
+}
+#textarea{
+    margin-bottom: 10px;
+    border: 2px solid var(--cor3);
+    width: 50%;
+}
+
+.voltar{
+    font-size: 1.3em;
+    font-family: var(--fonte-destaque);
+    background-image: linear-gradient(to right, var(--cor4), var(--cor2) );
+    color: var(--cor0);
+    padding: 3px 10px;
+    margin-left: 50%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.532);
+}
+/*.inputUser:hover ~ .inputLabel{
+    background-color: var(--cor0);
+}*/
