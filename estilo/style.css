@@ -73,7 +73,7 @@ header h1#top{
 header>p{
     color: white;
     height: 50px;
-    width: 458px;
+    max-width: 440px;
     margin: auto;
     text-align: center;
     padding-left: 10px;
